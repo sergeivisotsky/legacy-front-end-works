@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lesspay</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Sergei Visotsky, http://www.sergeivisotsky.com">
+	<meta name="description" content="Lesspay">
+	<meta property="og:title" content="Lesspay" />
+
+	<link rel="author" href="/humans.txt">
+
+	<meta property="og:description" content="Lesspay" />
+	<meta property="og:site_name" content="Lesspay" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+        	<script src="js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="history">
+	<div class="container">
+		<header class="clearfix">
+			<a href="/" class="logo">Lesspay</a>
+			<a href="#" class="exit-lnk">Exit</a>
+		</header>
+		<section class="main-content clearfix">
+			<article class="left-block">
+				<menu class="main-menu">
+					<ul>
+						<li><a href="account.html">Account</a></li>
+						<li><a href="history.html" class="active">History</a></li>
+						<li><a href="settings.html">Settings</a></li>
+						<li><a href="merchants.html">Merchants</a></li>
+					</ul>
+				</menu>
+			</article>
+			<article class="right-block">
+				<div class="first-block">
+					<span class="name">Hello, John Martin!</span>
+					<div class="wallets">
+						<span>Your wallets:</span>
+						<h2>Z386160 = 0.00 USD</h2>
+					</div>
+					<div class="transfers">
+						<a href="transfer.html" class="big-btn blue-btn">Make Transfer</a>
+						<br><br><a href="#" class="waitings-lnk">Transfers waiting (0)</a>
+					</div>
+				</div>
+				<div class="sec-block">
+					<span>Download history in:</span>
+					<div class="download-history">
+						<form class="download">
+							<input type="radio" id="pdf" name="pdf">
+							<label for="pdf">PDF</label>
+							<br>
+							<input type="radio" id="excel" name="excel">
+							<label for="excel">Excel</label>
+							<br><br><button class="big-btn more-orange-btn">Download</button>
+						</form>
+					</div>
+					<div class="event-log">
+						<h1>History</h1>
+						<table width="750">
+							<tr>
+								<td>From</td>
+								<td>To</td>
+								<td>Amount</td>
+								<td>Balance</td>
+								<td>Batch</td>
+								<td>Time</td>
+							</tr>
+							<tr>
+								<td>Z00005</td>
+								<td>Z00004</td>
+								<td><span class="green">+150.00 USD</span></td>
+								<td>540 USD</td>
+								<td>#12415</td>
+								<td>22 march 2013 | 14:15:22</td>
+							</tr>
+							<tr>
+								<td>Z00004</td>
+								<td>Z004121</td>
+								<td><span class="red">-30 USD</span></td>
+								<td>290 USD</td>
+								<td>#12312</td>
+								<td>22 march 2013 | 14:15:22</td>
+							</tr>
+							<tr>
+								<td>Z00001</td>
+								<td>Z00004</td>
+								<td><span class="green">+14.00 USD</span></td>
+								<td>320 USD</td>
+								<td>#12404</td>
+								<td>22 march 2013 | 14:15:22</td>
+							</tr>
+							<tr>
+								<td>Z00004</td>
+								<td>Z00005</td>
+								<td><span class="red">-52 USD USD</span></td>
+								<td>316 USD</td>
+								<td>#11980</td>
+								<td>22 march 2013 | 14:15:22</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</article>
+		</section>
+		<footer class="clearfix">
+			<span class="copy">&copy; 2013 Lesspay</span>
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Merchants</a></li>
+					<li><a href="#">Exchangers</a></li>
+					<li><a href="#">Fees</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">F.A.Q</a></li>
+					<li><a href="#">Developers support</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+/*
+	Author: Sergei Visotsky
+	Author URI: http://svisotsky.microlines.lv/
+*/
+
+/* Main Styles */
+
+body {
+    background: url(../img/bg.jpg);
+    font: 11px normal arial, helvetica, sans-serif; 
+    color: #555;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a {outline:none;}
+
+a:hover {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+/* Clearfix */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.main {
+    width: 1060px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Header */
+
+header {
+    background: url(../img/header-bg.png) no-repeat;
+    height: 430px;
+}
+
+header .logo {
+    float: left;
+}
+
+header .telephone {
+    float: right;
+}
+
+header .telephone img {
+    float: left;
+}
+
+header .telephone .text {
+    float: left;
+    font-size: 13px;
+    color: #000;
+}
+
+header .phone-sm-text {
+    color: #b4babb;
+    font-size: 18px;
+    float: left;
+    margin-top: 3px;
+}
+
+header .phone-big-text {
+    font-size: 30px;
+    float: left;
+}
+
+/* Navigation */
+
+header .main-nav {
+    float: left;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+header .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .main-nav ul li a {
+    color: #393939;
+}
+
+header .main-nav ul  li a:hover {
+    text-decoration: underline;
+}
+
+header .main-nav ul li .active {
+    background: url(../img/active-bg.png) top center no-repeat;
+    padding: 10px 35px;
+    min-width: 70px;
+}
+
+header .main-nav .first {
+    margin: 0;
+}
+
+header .main-nav .slash {
+    margin: 15px;
+}
+
+header .main-nav ul li {
+    float: left;
+}
+
+header .online-call {
+    float: right;
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+header .online-call a {
+    background: url(../img/refresh.png) no-repeat;
+    padding-left: 25px;
+}
+
+header .online-call a {
+    color: #ff0000;
+    text-decoration: none; 
+}
+
+header .online-call a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Content */
+
+.content .about {
+    background-image: linear-gradient(bottom, rgb(232,232,232) 33%, rgb(239,239,239) 67%);
+    background-image: -o-linear-gradient(bottom, rgb(232,232,232) 33%, rgb(239,239,239) 67%);
+    background-image: -moz-linear-gradient(bottom, rgb(232,232,232) 33%, rgb(239,239,239) 67%);
+    background-image: -webkit-linear-gradient(bottom, rgb(232,232,232) 33%, rgb(239,239,239) 67%);
+    background-image: -ms-linear-gradient(bottom, rgb(232,232,232) 33%, rgb(239,239,239) 67%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.33, rgb(232,232,232)),
+        color-stop(0.67, rgb(239,239,239)));
+    width: 430px;
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px 30px 30px 30px;
+    height: 320px; 
+}
+
+.content .about .sec-cont h1 {
+    font-size: 24px;
+    font-weight: normal;
+    float: left;
+    color: #000;
+}
+
+.content .about .sec-cont img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.content .about .sec-cont .more {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content .about .sec-cont .more:hover {
+    text-decoration: none;
+}
+
+.content .feedback {
+    padding: 5px 30px 30px 30px; 
+    width: 350px;
+    height: 347px;
+    background: url(../img/form-bg.png) no-repeat;
+    float: left;
+    margin-left: 40px;
+}
+
+.content .feedback h1 {
+    font-size: 24px;
+    font-weight: normal;
+    float: left;
+    color: #000;
+}
+
+.content .feedback .mail-img {
+    float: right;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+
+.content .feedback #feedback-form .inp-first {
+    width: 220px;
+    height: 25px;
+    background: url(../img/first-inp.png) no-repeat;
+    border: 0;
+}
+
+.content .feedback #feedback-form .inp-sec {
+    width: 220px;
+    height: 25px;
+    background: url(../img/sec-inp.png) no-repeat;
+    border: 0;
+}
+
+.content .feedback #feedback-form input:focus {
+    outline: none;
+}
+
+.content .feedback #feedback-form textarea {
+    background: url(../img/area-bg.png) no-repeat;
+    width: 220px;
+    height: 93px;
+    resize: none;
+    border: 0;
+}
+
+.content .feedback #feedback-form textarea:focus {
+    outline: none;
+}
+
+.content .feedback #feedback-form button {
+    background: url(../img/button-submit.png) no-repeat;
+    width: 116px;
+    height: 39px;
+    border: 0;
+} 
+
+.content .feedback #feedback-form .button:active {
+    border: solid 2px #bfbfbf;
+}
+
+.more {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    margin-left: 15px;
+    text-decoration: underline;
+    border: 0 none;
+    cursor: pointer;
+    line-height: .93;
+    height: .93em;
+    *top: 1px;
+    *padding-bottom: 1px
+}
+
+.more:hover {
+    text-decoration: none;
+    *padding-bottom: 0
+}
+
+.more:after {
+    content: '>>';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    padding-right: 4px;
+    margin-top: -7px
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    .more:after {
+        top: auto;
+        margin-top: 0;
+        line-height: .9
+    }
+}
+
+/* Footer */
+
+footer {
+    padding-bottom: 70px;
+}
+
+footer .copyright {
+    border-top: dashed 3px #cfcfcf;
+    width: 290px;
+    float: left;
+    padding-top: 20px;
+}
+
+footer .ft-nav-area {
+    width: 350px;
+    float: right;
+    margin-right: 60px;
+}
+
+footer .ft-nav-area img {
+    float: left;
+}
+
+footer .ft-nav {
+    float: left;
+    padding-top: 15px;
+}
+
+footer .ft-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+}
+
+footer .ft-nav ul li {
+    float: left;
+}
+
+footer .ft-nav .slash {
+    margin-left: 10px;
+    margin-right: 10px;
+}

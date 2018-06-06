@@ -1,0 +1,40 @@
+.login .form input.type1 {
+    padding: 15px 38px 15px 50px; 
+}
+
+.signup .form input.type1 {
+    padding: 15px 38px 15px 50px; 
+}
+
+.signup .form .form-corr {
+    left: 180px;
+    bottom: 70px;
+}
+
+.signup .form .form-incorr {
+    left: 270px;
+    bottom: 75px;
+}
+
+.payment .payment-form input.type1 {
+    padding: 25px 38px 15px 70px; 
+}
+
+.payment .payment-form .bank {
+    bottom: 110px;
+}
+
+.payment .payment-form .valut-text {
+    left: 0;
+    top: 55px;
+    left: -180px;
+    bottom: 70px;
+}
+
+.payment .payment-form .bank-tv {
+    bottom: 110px;
+}
+
+.payment .payment-form #pay-notif {
+    height: 60px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lesspay</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Sergei Visotsky, http://www.sergeivisotsky.com">
+	<meta name="description" content="Lesspay">
+	<meta property="og:title" content="Lesspay" />
+
+	<link rel="author" href="/humans.txt">
+
+	<meta property="og:description" content="Lesspay" />
+	<meta property="og:site_name" content="Lesspay" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+        	<script src="js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="transfer">
+	<div class="container">
+		<header class="clearfix">
+			<a href="/" class="logo">Lesspay</a>
+			<a href="#" class="exit-lnk">Exit</a>
+		</header>
+		<section class="main-content clearfix">
+			<article class="left-block">
+				<menu class="main-menu">
+					<ul>
+						<li><a href="account.html">Account</a></li>
+						<li><a href="history.html">History</a></li>
+						<li><a href="settings.html">Settings</a></li>
+						<li><a href="merchants.html">Merchants</a></li>
+					</ul>
+				</menu>
+			</article>
+			<article class="right-block">
+				<div class="first-block">
+					<span class="name">Hello, John Martin!</span>
+					<div class="wallets">
+						<span>Your wallets:</span>
+						<h2>Z386160 = 0.00 USD</h2>
+					</div>
+					<div class="transfers">
+						<a href="#" class="waitings-lnk">Transfers waiting (0)</a>
+					</div>
+				</div>
+				<div class="sec-block">
+					<h1>Make transfer</h1>
+					<form class="payment-form">
+						<div class="field">
+							<label for="bank-num">Bank number:</label>
+							<select id="bank-num" name="bank-num">
+								<option>KK000M8K3231</option>
+								<option>KK000M8K3231</option>
+								<option>KK000M8K3231</option>
+								<option>KK000M8K3231</option>
+								<option>KK000M8K3231</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="to-bank-num">Transfer bank number:</label>
+							<input id="to-bank-num" type="text">
+						</div>
+						<div class="field">
+							<label for="money">How much money:</label>
+							<input id="money" type="text">
+						</div>
+							<label for="protection">Pay with protection</label>&nbsp;
+							<input id="protection" type="checkbox" onclick="prot()">
+							<span class="pro-code" id="pro-code">48927</span>
+							<script>
+								function prot() {
+									if (document.getElementById('pro-code').style.display == 'block'){
+									document.getElementById('pro-code').style.display = 'none'}
+									else { document.getElementById('pro-code').style.display = 'block'}
+
+								}
+							</script>
+						<div class="field">
+							<label for="descr">Payment description:</label>
+							<input id="descr" type="text">
+						</div>
+						<button class="big-btn green-btn">Pay</button>
+					</form>
+				</div>
+			</article>
+		</section>
+		<footer class="clearfix">
+			<span class="copy">&copy; 2013 Lesspay</span>
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Merchants</a></li>
+					<li><a href="#">Exchangers</a></li>
+					<li><a href="#">Fees</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">F.A.Q</a></li>
+					<li><a href="#">Developers support</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>

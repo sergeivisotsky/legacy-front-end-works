@@ -1,0 +1,503 @@
+/*
+	Author: Sergei Visotsky
+	Author URI: http://www.sergeivisotsky.com
+*/
+
+/* Main Styles */
+
+body {
+    background: #f2f3f3;
+    font: 18px 'Rambla', sans-serif;
+}
+
+a {
+    color: #2285c5;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Clearfix */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Big button */
+
+a.big-btn {
+    padding: 5px 15px;
+    font-size: 23px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.orange-btn {
+    background-color: #fbaf5d;
+    border-bottom: 6px solid #f26c4f;
+}
+
+a.orange-btn:hover {
+    background-color: #ff8f77;
+    border-bottom: 6px solid #f26c4f;
+}
+
+.more-orange-btn {
+    padding: 5px 15px;
+    font-size: 23px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ff530d;
+    border-bottom: 6px solid #ed4c0c;
+}
+
+.more-orange-btn:hover {
+    background-color: #ed6731;
+    border-bottom: 6px solid #ed4c0c;
+}
+
+a.blue-btn {
+    background-color: #2285c5;
+    border-bottom: 4px solid #1e70a3;
+}
+
+a.blue-btn:hover {
+    background-color: #1188d3;
+    border-bottom: 4px solid #1e70a3;
+}
+
+a.login-btn {
+    padding: 1px 50px;
+    border-top: 2px solid #2285c5;
+}
+
+.green-btn {
+    padding: 5px 15px;
+    font-size: 23px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #a9cf54;
+    border-bottom: 6px solid #588f27;
+}
+
+.green-btn:hover {
+    background-color: #4ea600;
+    border-bottom: 6px solid #588f27;
+}
+
+.reg-btn {
+    color: #000;
+    border: 2px solid #2285c5;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.reg-btn:hover {
+    border: 2px solid #00548a;
+}
+
+.green {
+    color: #588f27;
+}
+
+.red {
+    color: #fe2c2c;
+}
+
+/* Header */
+
+header {
+    margin-top: 50px;
+}
+
+header .logo {
+    background: url(../img/logo.png) no-repeat;
+    display: block;
+    float: left;
+    width: 246px;
+    height: 79px;
+    text-indent: -9999px;
+    margin-left: 30px;
+}
+
+header .exit-lnk {
+    float: right;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+/* Main Content */
+
+.main-content {
+    margin-top: 100px;
+}
+
+.main-content .left-block, .right-block {
+    float: left;
+}
+
+.main-content .left-block {
+    width: 200px;
+}
+
+.main-content .left-block .big-btn {
+    margin-left: 30px;
+}
+
+.main-content .left-block .main-menu li {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.main-content .left-block .main-menu .active {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-content .right-block {
+    width: 450px;
+    margin-left: 300px;
+}
+
+.main-content .right-block .zero-percent {
+    background: url(../img/zero-percent.png) no-repeat;
+    width: 401px;
+    height: 299px;
+}
+
+.main-content .right-block .reg-block {
+    margin-top: 100px;
+}
+
+.main-content .right-block .reg-block h2 {
+    text-transform: uppercase;
+}
+
+.main-content .right-block .reg-block .buttons {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Account */
+
+.account .right-block {
+    margin-left: 50px;
+    width: 900px;
+}
+
+.account .right-block .first-block, .sec-block {
+    float: left;
+}
+
+.account .right-block .first-block {
+    width: 200px;
+}
+
+.account .right-block .first-block .wallets {
+    margin-top: 100px;
+}
+
+.account .right-block .first-block .wallets h2 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.account .right-block .first-block .transfers {
+    margin-top: 50px;
+}
+
+.account .right-block .sec-block {
+    width: 300px;
+    margin-left: 100px;
+}
+
+.account .right-block .sec-block .user-data {
+    margin-top: 50px;
+}
+
+.account .right-block .sec-block h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+
+.account .right-block .sec-block .event-log {
+    margin-top: 80px;
+}
+
+.account .right-block .sec-block .event-log table {
+    margin-top: 30px;
+}
+
+/* History */
+
+.history .right-block {
+    margin-left: 50px;
+    width: 900px;
+}
+
+.history .right-block .first-block, .sec-block {
+    float: left;
+}
+
+.history .right-block .first-block {
+    width: 200px;
+}
+
+.history .right-block .first-block .wallets {
+    margin-top: 100px;
+}
+
+.history .right-block .first-block .wallets h2 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.history .right-block .first-block .transfers {
+    margin-top: 50px;
+}
+
+.history .right-block .sec-block {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.history .right-block .sec-block .download-history .download {
+    margin-top: 10px;
+}
+
+.history .right-block .sec-block h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+
+.history .right-block .sec-block .event-log {
+    margin-top: 80px;
+}
+
+.history .right-block .sec-block .event-log table {
+    margin-top: 30px;
+}
+
+/* Settings */
+
+.settings .right-block {
+    margin-left: 10px;
+    width: 1000px;
+}
+
+.settings .right-block .first-block, .sec-block {
+    float: left;
+}
+
+.settings .right-block .first-block {
+    width: 200px;
+}
+
+.settings .right-block .first-block .wallets {
+    margin-top: 100px;
+}
+
+.settings .right-block .first-block .wallets h2 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.settings .right-block .first-block .transfers {
+    margin-top: 50px;
+}
+
+.settings .right-block .sec-block {
+    width: 700px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.settings .right-block .sec-block .setting-1 {
+    float: left;
+}
+
+.settings .right-block .sec-block h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+
+.settings .right-block .sec-block .secur-set, .mail-set {
+    float: left;
+    width: 350px;
+}
+
+.settings .right-block .sec-block .secur-set {
+    margin-top: 70px;
+}
+
+.settings .right-block .sec-block .secur-set .s-type {
+    margin-top: 40px;
+}
+
+.settings .right-block .sec-block .secur-set .s-type #s-word {
+    margin-left: 20px;
+}
+
+.settings .right-block .change-pswd {
+    width: 350px;
+    margin-top: 80px;
+}
+
+.settings .right-block .change-pswd .field {
+    clear: both;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.settings .right-block .change-pswd label {
+    float: left;
+    margin-top: 10px;
+}
+
+.settings .right-block .change-pswd input {
+    height: 30px;
+}
+
+.settings .right-block .merch-api {
+    margin-top: 100px;
+}
+
+/* Transfer */
+
+.transfer .right-block {
+    margin-left: 50px;
+    width: 900px;
+}
+
+.transfer .right-block .first-block, .sec-block {
+    float: left;
+}
+
+.transfer .right-block .first-block {
+    width: 200px;
+}
+
+.transfer .right-block .first-block .wallets {
+    margin-top: 100px;
+}
+
+.transfer .right-block .first-block .wallets h2 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.transfer .right-block .first-block .transfers {
+    margin-top: 50px;
+}
+
+.transfer .right-block .sec-block {
+    margin-left: 100px;
+}
+
+.transfer .right-block .sec-block h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+
+.transfer .right-block .payment-form {
+    margin-top: 50px;
+}
+
+.transfer .right-block .payment-form .field {
+    clear: both;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.transfer .right-block .payment-form select {
+    width: 195px;
+}
+
+.transfer .right-block .payment-form label {
+    float: left;
+    margin-top: 10px;
+}
+
+.transfer .right-block .payment-form input {
+    height: 30px;
+    margin-left: 30px;
+}
+
+.transfer .right-block .payment-form #protection {
+    float: right;
+}
+
+.transfer .right-block .payment-form .pro-code {
+    display: none;
+    float: right;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 160px;
+    margin-bottom: 50px;
+    border-top: 1px solid #000;
+    padding-top: 40px;
+}
+
+footer .copy, .footer-nav {
+   float: left;
+}
+
+footer .footer-nav {
+    margin-left: 300px;
+    font-size: 15px;
+}
+
+footer .footer-nav a {
+    color: #000;
+}
+
+footer .copy, .footer-nav li {
+    float: left;
+    margin-left: 30px;
+}

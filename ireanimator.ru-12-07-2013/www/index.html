@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>iReanimator - сеть ремонтных мастерских</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="iReanimator - сеть ремонтных мастерских">
+
+    <link rel="author" href="/humans.txt">
+    
+    <meta property="og:title" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:description" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:site_name" content="iReanimator - сеть ремонтных мастерских" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <!--[if lt IE 9]>
+        <script src="js/lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="main-container">
+        <header><!-- begin header -->
+            <nav class="main-nav"><!-- begin main navigation -->
+                <div class="container">
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" class="s-ico fb"></a>
+                        <a href="#" class="s-ico vk"></a>
+                        <a href="#" class="s-ico twitter"></a>
+                        <a href="#" class="s-ico g-plus"></a>
+                    </div>
+                </div>
+            </nav><!-- end main navigation -->
+            <div class="clear"></div>
+            <div class="sec-nav">
+                <div class="container">
+                    <a href="/" class="logo">iReanimator - сеть ремонтных мастерских</a>
+                    <div class="address">
+                        <span class="add-text" id="target1">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll1" ><div class="target-arrow"></div>
+                            <b>м. Охотный ряд, улица Тверская, д.7</b>
+                            <br><br>Понедельник-пятница с 10:00 до 20:00 
+                            <br>Суббота-воскресенье с 11:00 до 18:00 
+                            <br>По праздникам с 11:00 до 18:00
+                            <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <div class="address add2">
+                        <span class="add-text" id="target2">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll2" ><div class="target-arrow"></div>
+                        <b>м. Смоленская, улица Тверская, д.7</b>
+                        <br><br>Понедельник-пятница с 10:00 до 20:00 
+                        <br>Суббота-воскресенье с 11:00 до 18:00 
+                        <br>По праздникам с 11:00 до 18:00 
+                        <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <a href="#call-modal" class="call" data-toggle="modal">Перезвонить вам?</a>
+                    <a href="#fix-modal" class="btn order-btn" data-toggle="modal">Заказать ремонт</a>
+                </div>
+            </div>
+        </header><!-- end header-->
+        <div id="call-modal" class="modal call-modal hide fade"><!-- begin call modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Перезвонить вам</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="call-info">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" name="name" class="input">
+                    <br><br><label for="phone">Контактный телефон:</label><br>
+                    <input type="text" name="phone" class="input">
+                    <input type="button" class="btn order-btn" value="Заказать">
+                    <div class="info-red">Все поля обязательны для заполнения</div>
+                </form>
+            </div>
+        </div><!--  end call modal-->
+        <div id="fix-modal" class="modal fix-modal hide fade"><!-- begin fix modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Заказать ремонт</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="fix-info">
+                    <div class="left-part-info">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="name" class="input">
+                        <br><br><label for="phone">Контактный телефон:</label><br>
+                        <input type="text" name="phone" class="input">
+                        <br><br><label for="model">Модель устройства:</label><br>
+                        <input type="text" name="model" class="input">
+                        <br><br><label>Символы с картинки:</label>
+                        <br><img src="img/captcha.png" alt="Captcha Area">
+                    </div>
+                    <div class="right-part-info">
+                        <label for="descr">Описание неисправности:</label>
+                        <br><textarea class="descr" name="descr"></textarea>
+                        <input type="button" class="btn order-btn" value="Заказать">
+                        <div class="info-red">Все поля обязательны для заполнения</div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- end fix modal -->
+        <div class="clear"></div>
+        <div class="sel-device-area"><!-- begin Select device area -->
+            <div class="device-bg" id="device-bg">
+                <div class="opacity">
+                    <div class="container">
+                        <div class="device-i-v" id="device-i-v">
+                            <h2>Выберите устройство</h2>
+                            <div class="devices">
+                                <div class="devices-ico iphone-ico" id="iphone-ico"></div>
+                                <div class="devices-ico ipad-ico" id="ipad-ico"></div>
+                                <div class="devices-ico ipod-ico" id="ipod-ico"></div>
+                            </div>
+                            <div class="device-name">
+                                <a href="javascript:void(0)" id="link1">iPhone 3G и 3Gs</a>
+                                <a href="javascript:void(0)" id="link2">iPhone 4</a>
+                                <a href="javascript:void(0)" id="link3">iPhone 4s</a>
+                                <a href="javascript:void(0)" id="link4">iPhone 5</a>
+                            </div>
+                            <div class="problem" id="problem">
+                                <a href="javascript:void(0)" class="problem-lnk" id="problem-lnk">В чём проблема?</a>
+                                <p class="problem-title" id="problem-title"></p>
+                            </div>
+                        </div>
+                        <div class="arrow-ico" id="arrow-ico"></div>
+                        <div class="cost-area" id="cost-area">
+                            <span class="cost-text">8500 руб.</span>
+                            <p class="time-text">Время: 1 час</p>
+                            <p class="garant-text">Гарантия от 3-х месяцев!</p>
+                        </div>
+                        <div class="problem-popup" id="problem-popup">
+                            <div class="close-ico" id="close-ico"></div>
+                            <h2>В чем проблема?</h2>
+                            <div class="problems">
+                                <div class="left-part">
+                                    <div class="p-title" id="p-title1">Дисплей не работает</div>
+                                    <div class="p-title" id="p-title2">Стекло разбилось или треснуло</div>
+                                    <div class="p-title" id="p-title3">Корпус поцарапался или треснул</div>
+                                    <div class="p-title" id="p-title4">Влага попала внутрь</div>
+                                    <div class="p-title" id="p-title5">Вибро не работает</div>
+                                    <div class="p-title" id="p-title6">Звонок хрипит или не работает</div>
+                                    <div class="p-title" id="p-title7">Камера не работает</div>
+                                    <div class="p-title" id="p-title8">Часть экрана не работает</div>
+                                </div>
+                                <div class="right-part">
+                                    <div class="p-title" id="p-title9">Микрофон не работает</div>
+                                    <div class="p-title" id="p-title10">Вы не слышите собеседника</div>
+                                    <div class="p-title" id="p-title11">Не видит зарядки</div>
+                                    <div class="p-title" id="p-title12">Быстро разряжается</div>
+                                    <div class="p-title" id="p-title13">Не включается</div>
+                                    <div class="p-title" id="p-title14">Забыли пароль</div>
+                                    <div class="p-title" id="p-title15">Просит подключить iTunes</div>
+                                    <div class="p-title" id="p-title16">WiFi не работает или не ловит сеть</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end select device area -->
+        <div class="clear"></div>
+        <div class="actions"><!-- begin actions area -->
+            <div class="container">
+                <h2>Акции</h2>
+                <div class="a-controls" id="a-controls"></div>
+                <div class="action-text" id="action-text"></div>
+            </div>
+        </div><!-- end actions area -->
+        <section class="main-content"><!-- begin main content -->
+            <div class="container">
+                <article class="about-area">
+                    <div class="counter-area">
+                        <span class="counter-text">Мы уже реанимировали</span>
+                        <div id="counter"></div>
+                        <span class="counter-text">ваших любимцев</span>
+                    </div>
+                    <div class="about-text">
+                        <h1>Добро пожаловать в наш сервисный центр!</h1>
+                        <p>Сервисный центр «iReanimator» является самым большим сетевым сервисом, в него входит более 150 авторизованных мастерских в 50 городах России. «iReanimator» осуществляет комплексный послегарантийный ремонт техники Apple, высококвалифицированные мастера устраняют любые неисправности «iPhone», «iPod», «iPad», а так же ремонтируют неисправности мобильных устройств других производителей. Сервисный центр «iReanimator» осуществляет ремонт по низким ценам и предоставляет гарантию от 3 месяцев. На рынке России «iReanimator» зарекомендовал себя как высококачественный сервис с многочисленными положительными отзывами клиентов.</p>
+                    </div>
+                </article>
+                <article class="boxes">
+                    <div class="box">
+                        <div class="advent-ico clock-ico"></div>
+                        <div class="box-border"></div>
+                        <div class="box-text">
+                            <h2>Экономия времени</h2>
+                            <p>Мы экономим ваше время! — 70% ремонтов делается в течении часа, Вы даже не успеете соскучиться по своему телефону.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="advent-ico tick-ico"></div>
+                        <div class="box-border"></div>
+                        <div class="box-text">
+                            <h2>Даем гарантии</h2>
+                            <p>Мы осуществляем постгарантийный ремонт. После успешного ремонта мы предоставляем гарантию от 3 мес.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="advent-ico price-ico"></div>
+                        <div class="box-border"></div>
+                        <div class="box-text">
+                            <h2>Низкие цены</h2>
+                            <p>70% ремонтов делается в течении часа. Вы можете подождать своего айТоварища в уютной атмосфере нашего офиса. А наши цены на запчасти Вас приятно удивят.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="advent-ico star-ico"></div>
+                        <div class="box-border"></div>
+                        <div class="box-text">
+                            <h2>Стаж от 5 лет</h2>
+                            <p>Каждый наш инженер прошел всё необходимое обучение в области ремонта техники Apple.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section><!-- end main content -->
+        <div class="clear"></div>
+        <footer><!-- begin footer-->
+            <div class="container">
+                <p class="copy">&copy; iReanimator.ru, 2013</p>
+                <nav class="ft-nav"><!-- begin footer navigation -->
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                </nav><!-- end footer navigation -->
+            </div>
+        </footer><!-- end footer -->
+    </div>
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery-ui-effect.js"></script>
+    <script src="js/lib/flipcounter.js"></script>
+    <script src="js/plugins/counter.js"></script>
+    <script src="js/plugins/target.js"></script>
+    <script src="js/plugins/seldevice.js"></script>
+    <script src="js/plugins/actions.js"></script>
+    <script src="js/plugins/modal.js"></script>
+</body>
+</html>

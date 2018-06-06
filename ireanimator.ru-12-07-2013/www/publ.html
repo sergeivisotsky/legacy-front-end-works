@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>iReanimator - сеть ремонтных мастерских</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="iReanimator - сеть ремонтных мастерских">
+
+    <link rel="author" href="/humans.txt">
+    
+    <meta property="og:title" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:description" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:site_name" content="iReanimator - сеть ремонтных мастерских" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <!--[if lt IE 9]>
+        <script src="js/lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="main-container">
+        <header><!-- begin header -->
+            <nav class="main-nav"><!-- begin main navigation -->
+                <div class="container">
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="active">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" class="s-ico fb"></a>
+                        <a href="#" class="s-ico vk"></a>
+                        <a href="#" class="s-ico twitter"></a>
+                        <a href="#" class="s-ico g-plus"></a>
+                    </div>
+                </div>
+            </nav><!-- end main navigation -->
+            <div class="clear"></div>
+            <div class="sec-nav">
+                <div class="container">
+                    <a href="/" class="logo">iReanimator - сеть ремонтных мастерских</a>
+                    <div class="address">
+                        <span class="add-text" id="target1">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll1" ><div class="target-arrow"></div>
+                            <b>м. Охотный ряд, улица Тверская, д.7</b>
+                            <br><br>Понедельник-пятница с 10:00 до 20:00 
+                            <br>Суббота-воскресенье с 11:00 до 18:00 
+                            <br>По праздникам с 11:00 до 18:00
+                            <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <div class="address add2">
+                        <span class="add-text" id="target2">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll2" ><div class="target-arrow"></div>
+                        <b>м. Смоленская, улица Тверская, д.7</b>
+                        <br><br>Понедельник-пятница с 10:00 до 20:00 
+                        <br>Суббота-воскресенье с 11:00 до 18:00 
+                        <br>По праздникам с 11:00 до 18:00 
+                        <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <a href="#call-modal" class="call" data-toggle="modal">Перезвонить вам?</a>
+                    <a href="#fix-modal" class="btn order-btn" data-toggle="modal">Заказать ремонт</a>
+                </div>
+            </div>
+        </header><!-- end header-->
+        <div id="call-modal" class="modal call-modal hide fade"><!-- begin call modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Перезвонить вам</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="call-info">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" name="name" class="input">
+                    <br><br><label for="phone">Контактный телефон:</label><br>
+                    <input type="text" name="phone" class="input">
+                    <input type="button" class="btn order-btn" value="Заказать">
+                    <div class="info-red">Все поля обязательны для заполнения</div>
+                </form>
+            </div>
+        </div><!--  end call modal-->
+        <div id="fix-modal" class="modal fix-modal hide fade"><!-- begin fix modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Заказать ремонт</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="fix-info">
+                    <div class="left-part-info">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="name" class="input">
+                        <br><br><label for="phone">Контактный телефон:</label><br>
+                        <input type="text" name="phone" class="input">
+                        <br><br><label for="model">Модель устройства:</label><br>
+                        <input type="text" name="model" class="input">
+                        <br><br><label>Символы с картинки:</label>
+                        <br><img src="img/captcha.png" alt="Captcha Area">
+                    </div>
+                    <div class="right-part-info">
+                        <label for="descr">Описание неисправности:</label>
+                        <br><textarea class="descr" name="descr"></textarea>
+                        <input type="button" class="btn order-btn" value="Заказать">
+                        <div class="info-red">Все поля обязательны для заполнения</div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- end fix modal -->
+        <div class="clear"></div>
+        <section class="main-content posts"><!-- begin posts -->
+            <div class="container">
+                <section class="left-block">
+                    <div class="counter-area">
+                        <span class="counter-text">Мы уже реанимировали</span>
+                        <div id="counter"></div>
+                        <span class="counter-text">ваших любимцев</span>
+                    </div>
+                    <ul class="facts">
+                        <li>При замене экрана, стекла, на iPhone's бесплатная пленка в подарок!</li>
+                        <li class="green-fact">На отремонтированное устройство дается гарантия от 3 месяцев!</li>
+                        <li>Возникли вопросы? Звоните по телефону:
+                            <p class="tel-num">+7 859 968-96-89</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="right-block">
+                    <article class="post">
+                        <a href="text-page.html" class="post-title">Как перепрошить iphone</a>
+                        <p>Это самые высококвалифицированные специалисты. Мы следим за качеством запчастей и строго выполняем сервисные регламенты. Стандартный гарантийный срок на наши работы - 6 месяцев. Хотя мы и не являемся авторизованным сервисным центром Apple, большинство наших специалистов прошли обучение и имеют сертификат "Apple Technician". Мы действительно зарекомендовали себя когда дело касается Apple, и готовы в кратчайшие сроки вернуть ваше устройство к жизни.</p>
+                    </article>
+                     <article class="post">
+                        <a href="text-page.html" class="post-title">Чем авторизованный сервис отличается от обычного?</a>
+                        <p>Основная задача авторизованного сервиса - ремонтировать ваши устройства по гарантии. Если у вас такой случай, то вам не стоит беспокоится. Ваш телефон или ноутбук будет отремонтирован а все услуги сервиса будут оплачены компанией Apple. В чем же тогда недостаток авторизованного сервиса? Дело в том что в соответствии с политикой Apple авторизованные сервисы не имеют права производить компонентный ремонт материнских плат, то есть в случае любой не гарантийной поломки (даже самой незначительной) вам будет предложена замена всей материнской платы. Стоимость такой замены обычно составляет до 70% от стоимости нового ноутбука. Наш сервис не контролируется компанией Apple, и поэтому мы можем производить компонентный ремонт материнских плат, а это значительно дешевле замены. Еще один недостаток официальных сервисов - это сроки. Если время поджимает, то лучше обратится в платный ремонт, так как из-за необходимости заказа запчастей, официальный ремонт может затянутся до нескольких месяцев.</p>
+                    </article>
+                     <article class="post">
+                        <a href="text-page.html" class="post-title">Чем новый iphone отличается от старого</a>
+                        <p>Мы стараемся использовать только оригинальные запчасти, а в случаях когда это не возможно - обязательно предупреждаем наших клиентов. Вы можете быть уверены что все тачскрины, дисплеи, шлейфа для iPhone 3Gs, 4 и 4s являются оригинальными. В данный момент есть проблема с задними крышками на iPhone 3G/3Gs - оригинальные просто не поставляются, поэтому единственный выбор - копия, однако даже когда речь идет о копии, мы стараемся найти поставщика с наиболее качественными деталями. В дополнение к этому, как всегда, вы получаете гарантию 6 месяцев.</p>
+                    </article>
+                     <article class="post">
+                        <a href="text-page.html" class="post-title">Какие самые популярные проблемы с техникой Apple?</a>
+                        <p>С уверенностью можем сказать что техника Apple крайне надежа и самостоятельно ломается очень в редких случаях. Обычно к нам приносят залитые либо с разбитыми стеклами аппараты. Следующими по популярности идут не работающие динамики, микрофоны и кнопки "Home".</p>
+                    </article>
+                     <article class="post">
+                        <a href="text-page.html" class="post-title">Что делать при попадании влаги в устройство?</a>
+                        <p>Лучше всего как можно быстрее извлечь аккумулятор, однако многие последние устройства Apple не позволяют этого сделать. Если батарею извлечь не возможно, то ни в коем случае не пытайтесь сушить устройство феном или на батарее. Приносите как можно быстрее к нам. Помните что каждый дополнительный день увеличивает объем необходимых работ и стоимость. Устройства, которые были залиты более 2-х недель назад, скорее всего вернуть к жизни не получится.</p>
+                    </article>
+                </section>
+            </div>
+        </section><!-- end posts -->
+        <div class="clear"></div>
+        <footer><!-- begin footer -->
+            <div class="container">
+                <p class="copy">&copy; iReanimator.ru, 2013</p>
+                <nav class="ft-nav"><!-- begin footer navigation -->
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="#" class="faq.html">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="active">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                </nav><!-- end footer navigation -->
+            </div>
+        </footer><!-- end footer -->
+    </div>
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery-ui-effect.js"></script>
+    <script src="js/lib/flipcounter.js"></script>
+    <script src="js/plugins/counter.js"></script>
+    <script src="js/plugins/target.js"></script>
+    <script src="js/plugins/seldevice.js"></script>
+    <script src="js/plugins/actions.js"></script>
+    <script src="js/plugins/modal.js"></script>
+</body>
+</html>

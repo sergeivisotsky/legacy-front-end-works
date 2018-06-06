@@ -1,0 +1,119 @@
+body {
+    background: url(/img/dark/bg.jpg);
+    color: #000;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:hover {
+    color: #eebb24;
+}
+
+header .logo {
+    background: url(/img/dark/logo.png) no-repeat;
+    border-bottom: 1px dashed #d7d7d7;
+    padding-bottom: 30px;
+}
+
+.main-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+
+.main-nav a:hover {
+    color: #eebb24;
+    text-decoration: none;
+}
+
+.main-nav .active {
+    color: #eebb24;
+    text-decoration: none;
+}
+
+.main-nav ul li {
+    border-right: 5px solid #fff;
+}
+
+.main-nav .code-text {
+    color: #a29e9e;
+}
+
+.main-nav .code-text .bottom-text {
+    color: #fff;
+    border-top: 1px dashed #fff;
+}
+
+.arrow {
+	background: url(/img/dark/arrow.png) no-repeat;
+}
+
+.services {
+    border-top: 1px dashed #d7d7d7;
+}
+
+.services .services-items {
+    border-bottom: 1px dashed #d7d7d7;
+} 
+
+/* Sign In */
+
+.login .slogan {
+	color: #d7d7d7;
+}
+
+.login .form input.type1 {
+    background: url(/img/dark/input.png) no-repeat; 
+}
+
+.login .form input.button1 {
+    background:url(/img/dark/button.png) no-repeat; 
+} 
+
+/* Sign Up */
+
+.signup .slogan {
+    color: #d7d7d7;
+}
+
+.signup .form input.type1 {
+    background: url(/img/dark/input.png) no-repeat; 
+}
+
+.signup .form input.type2 {
+    background: url(/img/dark/input.png) no-repeat; 
+}
+
+.signup .form input.button1 {
+    background:url(/img/dark/button.png) no-repeat; 
+} 
+
+/* Reports */
+
+
+table.list { 
+    color: #bc990d;
+}
+
+table.list th a {
+    color: #bc990d; 
+}
+
+table.list tr.strip td {
+    color: #bc990d;
+}
+
+.b-th-border {
+    border-top: 1px dashed #d7d7d7;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.services-items .item {
+    margin-top: 0;
+    margin-bottom: 0;
+}

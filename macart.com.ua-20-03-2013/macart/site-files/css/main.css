@@ -1,0 +1,197 @@
+/*
+	Author: Sergei Visotsky
+	Author URI: http://www.svisotsky.com
+*/
+
+/* Main Styles */
+
+body {
+    background: url(../img/bg.jpg);
+    font: 16px normal arial, verdana, tahoma, sans-serif;
+}
+
+a, .lang a, .socials img{
+    -webkit-transition: 0.2s all ease-in-out 0s;
+    -moz-transition: 0.2s all ease-in-out 0s;
+    -o-transition: 0.2s all ease-in-out 0s;
+    -ms-transition: 0.2s all ease-in-out 0s;
+    transition: 0.2s all ease-in-out 0s;
+}
+
+a {
+    color: #dc9627;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff9c00;
+    text-decoration: none;
+}
+
+.main-content {
+    background: url(../img/cont-bg.jpg) no-repeat top center;
+    height: 100%;
+}
+
+.container {
+    width: 985px;
+    margin: 0 auto;
+}
+
+/* Clearfix */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* Header */
+
+header {
+    padding-top: 25px;
+}
+
+header .lang {
+    text-align: center;
+}
+
+header .logo {
+    float: left;
+}
+
+header .contacts {
+    float: right;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+header .contacts b {
+    font-size: 20px;
+}
+
+
+header .lang a:hover {
+    opacity: .5;
+}
+
+header .socials {
+    margin-top: 23px;
+}
+
+header .socials img:hover {
+    opacity: .5;
+}
+
+nav {
+    font: 30px 'Comic Sans MS';
+    font-weight: bold;
+    text-shadow: 3px -1px 6px rgba(0, 0, 0, 1), -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-left: 13px;
+}
+
+nav a:hover {
+    border-bottom: solid 3px #ff9c00;
+}
+
+nav .active {
+    color: #ff9c00;
+    border-bottom: solid 3px #ff9c00;
+}
+
+/* Content */
+
+.content {
+    color: #000;
+    margin-top: 37px;
+}
+
+.content .slideshow {
+    display: block;
+    padding-left: 250px;
+}
+
+.content .slideshow img {
+    display: none;
+}
+
+.content .slideshow img:first-child {
+    display: block;
+}
+
+.content .text {
+    width: 778px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #fefefe;
+    font-family: arial;
+    text-shadow: 5px -3px 5px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#access footer {
+    margin-top: 170px;
+}
+
+#complect footer {
+    margin-top: 90px;
+}
+
+#service footer {
+    margin-top: 190px;
+}
+
+#consulting footer {
+    margin-top: 190px;
+}
+
+#cooperation footer {
+    margin-top: 170px;
+}
+
+footer .ft-nav {
+    margin-left: 290px
+}
+
+footer .made {
+    margin-top: 10px;
+}

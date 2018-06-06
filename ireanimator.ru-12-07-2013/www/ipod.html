@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>iReanimator - сеть ремонтных мастерских</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="iReanimator - сеть ремонтных мастерских">
+
+    <link rel="author" href="/humans.txt">
+    
+    <meta property="og:title" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:description" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:site_name" content="iReanimator - сеть ремонтных мастерских" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <!--[if lt IE 9]>
+        <script src="js/lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="main-container">
+        <header><!-- begin header -->
+            <nav class="main-nav"><!-- begin main navigation -->
+                <div class="container">
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="active">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" class="s-ico fb"></a>
+                        <a href="#" class="s-ico vk"></a>
+                        <a href="#" class="s-ico twitter"></a>
+                        <a href="#" class="s-ico g-plus"></a>
+                    </div>
+                </div>
+            </nav><!-- end main navigation -->
+            <div class="clear"></div>
+            <div class="sec-nav">
+                <div class="container">
+                    <a href="/" class="logo">iReanimator - сеть ремонтных мастерских</a>
+                    <div class="address">
+                        <span class="add-text" id="target1">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll1" ><div class="target-arrow"></div>
+                            <b>м. Охотный ряд, улица Тверская, д.7</b>
+                            <br><br>Понедельник-пятница с 10:00 до 20:00 
+                            <br>Суббота-воскресенье с 11:00 до 18:00 
+                            <br>По праздникам с 11:00 до 18:00
+                            <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <div class="address add2">
+                        <span class="add-text" id="target2">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll2" ><div class="target-arrow"></div>
+                        <b>м. Смоленская, улица Тверская, д.7</b>
+                        <br><br>Понедельник-пятница с 10:00 до 20:00 
+                        <br>Суббота-воскресенье с 11:00 до 18:00 
+                        <br>По праздникам с 11:00 до 18:00 
+                        <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <a href="#call-modal" class="call" data-toggle="modal">Перезвонить вам?</a>
+                    <a href="#fix-modal" class="btn order-btn" data-toggle="modal">Заказать ремонт</a>
+                </div>
+            </div>
+        </header><!-- end header-->
+        <div id="call-modal" class="modal call-modal hide fade"><!-- begin call modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Перезвонить вам</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="call-info">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" name="name" class="input">
+                    <br><br><label for="phone">Контактный телефон:</label><br>
+                    <input type="text" name="phone" class="input">
+                    <input type="button" class="btn order-btn" value="Заказать">
+                    <div class="info-red">Все поля обязательны для заполнения</div>
+                </form>
+            </div>
+        </div><!--  end call modal-->
+        <div id="fix-modal" class="modal fix-modal hide fade"><!-- begin fix modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Заказать ремонт</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="fix-info">
+                    <div class="left-part-info">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="name" class="input">
+                        <br><br><label for="phone">Контактный телефон:</label><br>
+                        <input type="text" name="phone" class="input">
+                        <br><br><label for="model">Модель устройства:</label><br>
+                        <input type="text" name="model" class="input">
+                        <br><br><label>Символы с картинки:</label>
+                        <br><img src="img/captcha.png" alt="Captcha Area">
+                    </div>
+                    <div class="right-part-info">
+                        <label for="descr">Описание неисправности:</label>
+                        <br><textarea class="descr" name="descr"></textarea>
+                        <input type="button" class="btn order-btn" value="Заказать">
+                        <div class="info-red">Все поля обязательны для заполнения</div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- end fix modal -->
+        <div class="clear"></div>
+        <div class="sel-device-area sel-d-s-a"><!-- begin Select device area -->
+            <div class="ipod-bg">
+                <div class="opacity">
+                    <div class="container">
+                        <div class="device-i-v" id="device-i-v">
+                            <h2>Выберите устройство</h2>
+                            <div class="device-name">
+                                <a href="javascript:void(0)" id="link1">iPod Video</a>
+                                <a href="javascript:void(0)" id="link2">iPod Classic</a>
+                                <a href="javascript:void(0)" id="link3">iPod Touch 1G, 2G и 3G</a>
+                                <a href="javascript:void(0)" id="link4">iPod Touch 4G</a>
+                            </div>
+                            <div class="problem" id="problem">
+                                <a href="javascript:void(0)" class="problem-lnk" id="problem-lnk">В чём проблема?</a>
+                                <p class="problem-title" id="problem-title"></p>
+                            </div>
+                        </div>
+                        <div class="arrow-ico" id="arrow-ico"></div>
+                        <div class="cost-area" id="cost-area">
+                            <span class="cost-text">8500 руб.</span>
+                            <p class="time-text">Время: 1 час</p>
+                            <p class="garant-text">Гарантия от 3-х месяцев!</p>
+                        </div>
+                        <div class="problem-popup" id="problem-popup">
+                            <div class="close-ico" id="close-ico"></div>
+                            <h2>В чем проблема?</h2>
+                            <div class="problems">
+                                <div class="left-part">
+                                    <div class="p-title" id="p-title1">Дисплей не работает</div>
+                                    <div class="p-title" id="p-title2">Стекло разбилось или треснуло</div>
+                                    <div class="p-title" id="p-title3">Корпус поцарапался или треснул</div>
+                                    <div class="p-title" id="p-title4">Влага попала внутрь</div>
+                                    <div class="p-title" id="p-title5">Вибро не работает</div>
+                                    <div class="p-title" id="p-title6">Звонок хрипит или не работает</div>
+                                    <div class="p-title" id="p-title7">Камера не работает</div>
+                                    <div class="p-title" id="p-title8">Часть экрана не работает</div>
+                                </div>
+                                <div class="right-part">
+                                    <div class="p-title" id="p-title9">Микрофон не работает</div>
+                                    <div class="p-title" id="p-title10">Вы не слышите собеседника</div>
+                                    <div class="p-title" id="p-title11">Не видит зарядки</div>
+                                    <div class="p-title" id="p-title12">Быстро разряжается</div>
+                                    <div class="p-title" id="p-title13">Не включается</div>
+                                    <div class="p-title" id="p-title14">Забыли пароль</div>
+                                    <div class="p-title" id="p-title15">Просит подключить iTunes</div>
+                                    <div class="p-title" id="p-title16">WiFi не работает или не ловит сеть</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end select device area -->
+        <div class="clear"></div>
+        <div class="actions"><!-- begin actions area -->
+            <div class="container">
+                <h2>Акции</h2>
+                <div class="a-controls" id="a-controls"></div>
+                <div class="action-text" id="action-text"></div>
+            </div>
+        </div><!-- end actions area -->
+        <section class="main-content fix-device"><!-- begin fix device content -->
+            <div class="container">
+                <article class="about-area">
+                    <div class="counter-area">
+                        <span class="counter-text">Мы уже реанимировали</span>
+                        <div id="counter"></div>
+                        <span class="counter-text">ваших любимцев</span>
+                    </div>
+                    <div class="about-text">
+                        <h1>Весь спектр услуг по ремонту iPad</h1>
+                        <p>Наши мастерские предлагают весь спектр услуг по ремонту iPad. Замена touch screen, корпуса iPad, ремонт разъема зарядки, кнопки Power и Home, установка программ, игр, запись фильмов. Из-за большого размера, экран становится основной причиной ремонта, трещины, или сколы на любимом аппарате могут доставить не мало неприятных минут. Замена дисплея в ipad совершенно не вызовет проблем у любого нашего специалиста. Мы проведем полную диагностику всех узлов устройства совершенно бесплатно. И только после этого согласуем с Вами сроки и стоимость ремонта.</p>
+                        <p>Естественно ,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPod, показать и научить ими пользоваться.</p>
+                    </div>
+                </article>
+                <div class="dev-f" id="ipod-video"></div><article class="device-fix-serv">
+                    <div class="left-block">
+                        <a href="#fix-modal" class="btn" data-toggle="modal">Заказать ремонт</a>
+                        <ul class="facts">
+                            <li>Цены указаны с учетом комплектующих.</li>
+                            <li class="green-fact">На отремонтированное устройство дается гарантия от 3 месяцев!</li>
+                            <li>Прайс-лист не содержит полный перечень услуг, за подробностями обращайтесь по телефону:
+                                <p class="tel-num">+7 859 968-96-89</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services-area">
+                        <h2>Цена на ремонт <span>iPod Video</span></h2>
+                        <div class="more">
+                            <span class="more-text">Ещё:</span>
+                            <a href="#ipod-classic">iPod Classic</a>
+                            <a href="#ipod-touch-old">iPod Touch 1G, 2G и 3G</a>
+                            <a href="#ipod-touch-4g">iPod Touch 4G</a>
+                        </div>
+                        <div class="services">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr class="service grey-service">
+                                  <td class="service">Замена сенсорного стекла</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена дисплея</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена задней панели для версии</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена задней панели для версии Wifi</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа дисплея</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аудио шлейфа</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа антенны</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена шлейфа GPS</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа wifi</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Ремонт кнопки "Home"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Ремонт кнопок "Power\Volume\Mute"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аккумулятора</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена разъема зарядки\синхронизации</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info">Также тут может быть небольшой текст. Естественно,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPod, показать и научить ими пользоваться.</div>
+                    </div>
+                </article>
+                <div class="dev-f" id="ipod-classic"></div><article class="device-fix-serv" >
+                    <div class="left-block">
+                        <a href="#fix-modal" class="btn" data-toggle="modal">Заказать ремонт</a>
+                        <ul class="facts">
+                            <li>Цены указаны с учетом комплектующих.</li>
+                            <li class="green-fact">На отремонтированное устройство дается гарантия от 3 месяцев!</li>
+                            <li>Прайс-лист не содержит полный перечень услуг, за подробностями обращайтесь по телефону:
+                                <p class="tel-num">+7 859 968-96-89</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services-area">
+                        <h2>Цена на ремонт <span>iPod Classic</span></h2>
+                        <div class="more">
+                            <span class="more-text">Ещё:</span>
+                            <a href="#ipod-video">iPod Video</a>
+                            <a href="#ipod-touch-old">iPod Touch 1G, 2G и 3G</a>
+                            <a href="#ipod-touch-4g">iPod Touch 4G</a>
+                        </div>
+                        <div class="services">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr class="service grey-service">
+                                  <td class="service">Замена сенсорного стекла</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена дисплея</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена задней панели для версии</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена задней панели для версии Wifi</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа дисплея</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аудио шлейфа</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа антенны</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена шлейфа GPS</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа wifi</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Ремонт кнопки "Home"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Ремонт кнопок "Power\Volume\Mute"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аккумулятора</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена разъема зарядки\синхронизации</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info">Также тут может быть небольшой текст. Естественно,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPod, показать и научить ими пользоваться.</div>
+                    </div>
+                </article>
+                <div class="dev-f" id="ipod-touch-old"></div><article class="device-fix-serv">
+                    <div class="left-block">
+                        <a href="#fix-modal" class="btn" data-toggle="modal">Заказать ремонт</a>
+                        <ul class="facts">
+                            <li>Цены указаны с учетом комплектующих.</li>
+                            <li class="green-fact">На отремонтированное устройство дается гарантия от 3 месяцев!</li>
+                            <li>Прайс-лист не содержит полный перечень услуг, за подробностями обращайтесь по телефону:
+                                <p class="tel-num">+7 859 968-96-89</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services-area">
+                        <h2>Цена на ремонт <span>iPod Touch 1G, 2G и 3G</span></h2>
+                        <div class="more">
+                            <span class="more-text">Ещё:</span>
+                            <a href="#ipod-video">iPod Video</a>
+                            <a href="#ipod-classic">iPod Classic</a>
+                            <a href="#ipod-touch-4g">iPod Touch 4G</a>
+                        </div>
+                        <div class="services">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr class="service grey-service">
+                                  <td class="service">Замена сенсорного стекла</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена дисплея</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена задней панели для версии</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена задней панели для версии Wifi</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа дисплея</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аудио шлейфа</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа антенны</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена шлейфа GPS</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа wifi</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Ремонт кнопки "Home"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Ремонт кнопок "Power\Volume\Mute"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аккумулятора</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена разъема зарядки\синхронизации</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info">Также тут может быть небольшой текст. Естественно,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPod, показать и научить ими пользоваться.</div>
+                    </div>
+                </article>
+                <div class="dev-f" id="ipod-touch-4g"></div><article class="device-fix-serv">
+                    <div class="left-block">
+                        <a href="#fix-modal" class="btn" data-toggle="modal">Заказать ремонт</a>
+                        <ul class="facts">
+                            <li>Цены указаны с учетом комплектующих.</li>
+                            <li class="green-fact">На отремонтированное устройство дается гарантия от 3 месяцев!</li>
+                            <li>Прайс-лист не содержит полный перечень услуг, за подробностями обращайтесь по телефону:
+                                <p class="tel-num">+7 859 968-96-89</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services-area">
+                        <h2>Цена на ремонт <span>iPod Touch 4G</span></h2>
+                        <div class="more">
+                            <span class="more-text">Ещё:</span>
+                            <a href="#ipod-video">iPod Video</a>
+                            <a href="#ipod-classic">iPod Classic</a>
+                            <a href="#ipod-touch-old">iPod Touch 1G, 2G и 3G</a>
+                        </div>
+                        <div class="services">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr class="service grey-service">
+                                  <td class="service">Замена сенсорного стекла</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена дисплея</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена задней панели для версии</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена задней панели для версии Wifi</td>
+                                  <td class="sum"><b>2500 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа дисплея</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аудио шлейфа</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа антенны</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена шлейфа GPS</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена шлейфа wifi</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Ремонт кнопки "Home"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Ремонт кнопок "Power\Volume\Mute"</td>
+                                  <td class="sum"><b>1900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service">
+                                  <td class="service">Замена аккумулятора</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                                <tr class="service grey-service">
+                                  <td class="service">Замена разъема зарядки\синхронизации</td>
+                                  <td class="sum"><b>2900 руб.</b></td>
+                                  <td class="time">1 час</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info">Также тут может быть небольшой текст. Естественно,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPod, показать и научить ими пользоваться.</div>
+                    </div>
+                </article>
+                <article class="text-block">
+                    <img src="../img/post-img.jpg">
+                    <div class="text">
+                        <h2>Пример дополнительного текста</h2>
+                        <p>Наши мастерские предлагают весь спектр услуг по ремонту iPad. Замена touch screen, корпуса iPad, ремонт разъема зарядки, кнопки Power и Home, установка программ, игр, запись фильмов. Из-за большого размера, экран становится основной причиной ремонта, трещины, или сколы на любимом аппарате могут доставить не мало неприятных минут. Замена дисплея в ipad совершенно не вызовет проблем у любого нашего специалиста. Мы проведем полную диагностику всех узлов устройства совершенно бесплатно. И только после этого согласуем с Вами сроки и стоимость ремонта.</p>
+                        <p>Естественно ,мы сохраним всю хранившуюся на девайсе информацию, перенеся ее на альтернативный носитель. Наши специалисты не только качественно, быстро и не дорого починят Ваш девайс, но и смогут рассказать обо всех возможностях Вашего iPad, показать и научить ими пользоваться.</p>
+                    </div>
+                </article>
+            </div>
+        </section><!-- end fix device content -->
+        <div class="clear"></div>
+        <footer><!-- begin footer-->
+            <div class="container">
+                <p class="copy">&copy; iReanimator.ru, 2013</p>
+                <nav class="ft-nav"><!-- begin footer navigation -->
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="active">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="">Контактная информация</a></li>
+                    </ul>
+                </nav><!-- end footer navigation -->
+            </div>
+        </footer><!-- end footer -->
+    </div>
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery-ui-effect.js"></script>
+    <script src="js/lib/flipcounter.js"></script>
+    <script src="js/plugins/counter.js"></script>
+    <script src="js/plugins/target.js"></script>
+    <script src="js/plugins/seldevice.js"></script>
+    <script src="js/plugins/actions.js"></script>
+    <script src="js/plugins/modal.js"></script>
+</body>
+</html>

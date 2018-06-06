@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>PayWay</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Sergei Visotsky, http://www.sergeivisotsky.com">
+    <meta name="description" content="Payway wallet">
+    <meta property="og:title" content="Payway wallet" />
+    <meta property="og:description" content="Payway wallet" />
+    <meta property="og:site_name" content="Payway wallet" />
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/light.css" rel="stylesheet" id="theme-css">
+    <!--[if lt IE 9]>
+        <script src="/js/lib/html5shiv-printshiv.js"></script>
+        <link href="/css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE 8]>
+        <link href="/css/ie8.css" rel="stylesheet">
+    <![endif]-->
+    <script src="/js/lib/modernizr.js"></script>
+    <script src="/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</head>
+<body class="payment">
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Payway wallet</a>
+        </header>
+        <div class="main-content">
+            <div class="content">
+                <!-- <nav class="main-nav clearfix">
+                    <ul>
+                        <li><a href="/" class="active">Start</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="#">Favorites<img class="star" src="/img/light/star.png"></li>
+                        <li><a href="#">Profile</a></li>
+                        <li class="code-text">
+                            <div class="top-text">0793555514</div>
+                            <div class="bottom-text">4,096 UGX</div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="arrow"></div> -->
+                <div class="aitime">
+                    <nav class="payment-nav clearfix">
+                        <ul>
+                            <li><a href="airtime.html">Airtime</a></li>
+                            <li><a href="#">Utilities</a></li>
+                            <li><a href="#">E-money</a></li>
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="tv.html" class="active">TV</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </nav>
+                <form id="payment" class="payment-form clearfix">
+                        <input class="type1 type3" type="text" value="Smart Card Code (11 digits)" onfocus="if(this.value=='Smart Card Code (11 digits)') this.value='';" /><img class="bank-tv" src="/img/bank-startimes.png">
+                        <input id="remember-code" type="checkbox" name="remember-code">
+                        <label for="remember-code">Remember this number</label>
+                        <br />
+                        <input class="type1 type2" type="text" value="Amount" onfocus="if(this.value=='Amount') this.value='';" /><span class="valut-text">UGX</span><br />
+                        <div class="button1" id="pay-button" onclick="pay();">Pay</div>
+                            <div id="pay-notif">
+                                <div class="pay-notif-cont">    
+                                    By clicking PAY you agree <a href="/terms">to terms and conditions</a> of this service.
+                                </div>
+                                <input class="button2" type="button" value="Pay" />
+                            </div>
+                        </form>
+                </div>
+                <section class="support">
+                    <a href="#">Found an error or have a suggestion? Tell us about it!</a>
+                    <br><br>
+                    <a href="#" class="logout-lnk">Log Out</a>
+                </section>
+            </div>
+        </div>
+        <div class="b-th-border"></div>
+        <footer class="clearfix">
+            <p class="theme">Change theme:</p>
+            <span class="light">Light</span>
+            <div class="onoffswitch">
+                <div class="contr-l" id="myonoffswitch" onclick='theme();'></div>
+            </div>
+            <span class="dark">Dark</span>
+        </footer>
+    </div>
+</body>
+</html>

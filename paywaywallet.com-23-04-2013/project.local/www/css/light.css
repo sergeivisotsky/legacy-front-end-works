@@ -1,0 +1,120 @@
+body {
+    background: url(/img/light/bg.jpg);
+    color: #000;
+}
+
+a {
+    text-decoration: underline;
+    color: #454545;
+}
+
+a:hover {
+    color: #6c6c6c;
+}
+
+header .logo {
+    background: url(/img/light/logo.png) no-repeat;
+}
+
+.main-content {
+    position: relative;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url(/pie/PIE.htc);
+    border: 1px dashed #6c6c6c;
+}
+
+/* Navigation */
+
+.main-nav a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-nav .active {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-nav ul li {
+    border-right: 5px solid #6c6c6c;
+}
+
+.main-nav .code-text .bottom-text {
+    color: #6c6c6c;
+    border-top: 1px dashed #6c6c6c;
+}
+
+.arrow {
+	background: url(/img/light/arrow.png) no-repeat;
+}
+
+.services {
+    border-top: 1px dashed #6c6c6c;
+}
+
+.services .services-items {
+    border-bottom: 1px dashed #6c6c6c;
+} 
+
+.services-items .item {
+	background: url(/img/light/rombs.png) no-repeat;
+}
+
+.logout-lnk {
+    color: #000;
+}
+
+/* Reports */
+
+.reports-cont .reports {
+    background: #e8e3d6;
+    border-radius: 10px;
+}
+
+table.list { 
+    color: #454545;
+}
+
+table.list th a {
+    color: #bc990d; 
+}
+
+table.list tr.strip td {
+    color: #8e8e8e;
+}
+
+/* Log In */
+
+.login .slogan {
+	color: #6c6c6c;
+}
+
+.login .form input.type1 {
+    background: url(/img/light/input.png) no-repeat; 
+}
+
+.login .form input.button1 {
+    background:url(/img/light/button.png) no-repeat; 
+} 
+
+/* Sign Up */
+
+.signup .slogan {
+    color: #6c6c6c;
+}
+
+.signup .form input.type1 {
+    background: url(/img/light/input.png) no-repeat; 
+}
+
+.signup .form input.type2 {
+    background: url(/img/light/input2.png) no-repeat; 
+}
+
+.signup .form input.button1 {
+    background:url(/img/light/button.png) no-repeat; 
+} 

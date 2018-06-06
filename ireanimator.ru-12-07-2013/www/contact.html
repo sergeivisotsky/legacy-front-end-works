@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>iReanimator - сеть ремонтных мастерских</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="iReanimator - сеть ремонтных мастерских">
+
+    <link rel="author" href="/humans.txt">
+    
+    <meta property="og:title" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:description" content="iReanimator - сеть ремонтных мастерских" />
+    <meta property="og:site_name" content="iReanimator - сеть ремонтных мастерских" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <!--[if lt IE 9]>
+        <script src="js/lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="main-container">
+        <header><!-- begin header -->
+            <nav class="main-nav"><!-- begin main navigation -->
+                <div class="container">
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="active">Контактная информация</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" class="s-ico fb"></a>
+                        <a href="#" class="s-ico vk"></a>
+                        <a href="#" class="s-ico twitter"></a>
+                        <a href="#" class="s-ico g-plus"></a>
+                    </div>
+                </div>
+            </nav><!-- end main navigation -->
+            <div class="clear"></div>
+            <div class="sec-nav">
+                <div class="container">
+                    <a href="/" class="logo">iReanimator - сеть ремонтных мастерских</a>
+                    <div class="address">
+                        <span class="add-text" id="target1">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll1" ><div class="target-arrow"></div>
+                            <b>м. Охотный ряд, улица Тверская, д.7</b>
+                            <br><br>Понедельник-пятница с 10:00 до 20:00 
+                            <br>Суббота-воскресенье с 11:00 до 18:00 
+                            <br>По праздникам с 11:00 до 18:00
+                            <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <div class="address add2">
+                        <span class="add-text" id="target2">м. Охотный ряд<span class="plus">+</span></span>
+                        <div class="target-popup" id="popupAll2" ><div class="target-arrow"></div>
+                        <b>м. Смоленская, улица Тверская, д.7</b>
+                        <br><br>Понедельник-пятница с 10:00 до 20:00 
+                        <br>Суббота-воскресенье с 11:00 до 18:00 
+                        <br>По праздникам с 11:00 до 18:00 
+                        <br><br><a href="#">Подробнее</a> 
+                        </div>
+                        <br><span class="tel">+7 988 98-96-96</span>
+                    </div>
+                    <a href="#call-modal" class="call" data-toggle="modal">Перезвонить вам?</a>
+                    <a href="#fix-modal" class="btn order-btn" data-toggle="modal">Заказать ремонт</a>
+                </div>
+            </div>
+        </header><!-- end header-->
+        <div id="call-modal" class="modal call-modal hide fade"><!-- begin call modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Перезвонить вам</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="call-info">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" name="name" class="input">
+                    <br><br><label for="phone">Контактный телефон:</label><br>
+                    <input type="text" name="phone" class="input">
+                    <input type="button" class="btn order-btn" value="Заказать">
+                    <div class="info-red">Все поля обязательны для заполнения</div>
+                </form>
+            </div>
+        </div><!--  end call modal-->
+        <div id="fix-modal" class="modal fix-modal hide fade"><!-- begin fix modal -->
+            <div class="modal-header">
+                <div class="close-modal" data-dismiss="modal" aria-hidden="true"></div>
+                <h2>Заказать ремонт</h2>
+            </div>  
+            <div class="modal-body">
+                <form id="fix-info">
+                    <div class="left-part-info">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="name" class="input">
+                        <br><br><label for="phone">Контактный телефон:</label><br>
+                        <input type="text" name="phone" class="input">
+                        <br><br><label for="model">Модель устройства:</label><br>
+                        <input type="text" name="model" class="input">
+                        <br><br><label>Символы с картинки:</label>
+                        <br><img src="img/captcha.png" alt="Captcha Area">
+                    </div>
+                    <div class="right-part-info">
+                        <label for="descr">Описание неисправности:</label>
+                        <br><textarea class="descr" name="descr"></textarea>
+                        <input type="button" class="btn order-btn" value="Заказать">
+                        <div class="info-red">Все поля обязательны для заполнения</div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- end fix modal -->
+        <div class="clear"></div>
+        <section class="main-content contact"><!-- begin contact -->
+            <div class="container">
+                <section class="address address-1">
+                    <article class="add-text">
+                        <i class="loc-ico"></i><h1>м. Охотный ряд, улица Тверская, д.7</h1>
+                        <div class="add-text-sec">
+                            <a href="http://maps.yandex.ru/?um=fbkIWcnHzGs-aOjw1DiFdm6LrbcgODpv&l=map" target="_blank">Посмотреть на карте</a>
+                            <p class="phone-num">+7 (495) 723-28-71</p>
+                            <div class="work-g-1">
+                                <h3>Режим работы</h3>
+                                <p>Понедельник-пятница с 10:00 до 20:00 
+                                <br>Суббота-воскресенье с 11:00 до 18:00 
+                                <br>По праздникам с 11:00 до 18:00</p>
+                            </div>
+                            <div class="work-g-2">
+                                <h3>Ориентир</h3>
+                                <p>Сервисный центр находится в здании Центрального телеграфа между салоном связи Евросеть и кафе Шоколадница.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="add-photo">
+                        <div class="first-part">
+                            <img src="img/contact-photo/1.jpg">
+                            <img src="img/contact-photo/3.jpg">
+                        </div>    
+                        <div class="sec-part">
+                            <img src="img/contact-photo/2.jpg">
+                            <img src="img/contact-photo/4.jpg">
+                        </div>
+                    </article>
+                </section>
+                <section class="address">
+                    <article class="add-text">
+                        <i class="loc-ico"></i><h1>м. Смоленская, улица Тверская, д.7</h1>
+                        <div class="add-text-sec">
+                            <a href="http://maps.yandex.ru/?um=fbkIWcnHzGs-aOjw1DiFdm6LrbcgODpv&l=map" target="_blank">Посмотреть на карте</a>
+                            <p class="phone-num">+7 (495) 723-28-71</p>
+                            <div class="work-g-1">
+                                <h3>Режим работы</h3>
+                                <p>Понедельник-пятница с 10:00 до 20:00 
+                                <br>Суббота-воскресенье с 11:00 до 18:00 
+                                <br>По праздникам с 11:00 до 18:00</p>
+                            </div>
+                            <div class="work-g-2">
+                                <h3>Ориентир</h3>
+                                <p>Сервисный центр находится в здании Центрального телеграфа между салоном связи Евросеть и кафе Шоколадница.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="add-photo">
+                        <div class="first-part">
+                            <img src="img/contact-photo/1.jpg">
+                            <img src="img/contact-photo/3.jpg">
+                        </div>    
+                        <div class="sec-part">
+                            <img src="img/contact-photo/2.jpg">
+                            <img src="img/contact-photo/4.jpg">
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section><!-- end contact -->
+        <div class="clear"></div>
+        <footer><!-- begin footer -->
+            <div class="container">
+                <p class="copy">&copy; iReanimator.ru, 2013</p>
+                <nav class="ft-nav"><!-- begin footer navigation -->
+                    <ul>
+                        <li><a href="iphone.html" class="">Ремонт iPhone</a></li>
+                        <li><a href="ipad.html" class="">Ремонт iPad</a></li>
+                        <li><a href="ipod.html" class="">Ремонт iPod</a></li>
+                        <li><a href="faq.html" class="">Частые вопросы</a></li>
+                        <li><a href="publ.html" class="">Статьи</a></li>
+                        <li><a href="contact.html" class="active">Контактная информация</a></li>
+                    </ul>
+                </nav><!-- end footer navigation -->
+            </div>
+        </footer><!-- end footer -->
+    </div>
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery-ui-effect.js"></script>
+    <script src="js/lib/flipcounter.js"></script>
+    <script src="js/plugins/counter.js"></script>
+    <script src="js/plugins/target.js"></script>
+    <script src="js/plugins/seldevice.js"></script>
+    <script src="js/plugins/actions.js"></script>
+    <script src="js/plugins/modal.js"></script>
+</body>
+</html>

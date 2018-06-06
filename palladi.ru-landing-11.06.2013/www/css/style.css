@@ -1,0 +1,541 @@
+/*
+	Author: Sergei Visotsky
+	Author URI: http://www.sergeivisotsky.com
+*/
+
+/* Main Styles */
+
+body {
+    background: #fff;
+    color: #000;
+    font: 14px Arial, Verdana, sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+::-webkit-selection {color: #fff; text-shadow: none; background-color: #e08d01;}
+::-moz-selection {color: #fff; text-shadow: none; background-color: #e08d01;}
+::selection {color: #fff; text-shadow: none; background-color: #e08d01;}
+
+/* Clearfix */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* Header */
+
+header {
+    background: url(../img/big-man.png) right bottom no-repeat;
+    background-color: #de8c22;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header .logo {
+    background: url(../img/logo.png) no-repeat;
+    width: 156px;
+    height: 116px;
+    display: block;
+    text-indent: -9999px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .head-slogan {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+header .head-slogan h1 {
+    font-size: 48px;
+}
+
+header .head-slogan h2 {
+    font-size: 20px;
+}
+
+/* What id new block */
+
+#what-new {
+    height: 870px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#what-new .container {
+    margin: 60px auto 50px auto !important;
+}
+
+#what-new .what-new-descr {
+    width: 500px;
+    font-size: 18px;
+    color: #7c7c7c;
+}
+
+#what-new h1 {
+    font-size: 48px;
+    color: #000;
+    font-weight: 400;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#what-new .what-new-descr, .list-area {
+    display: inline-block;
+}
+
+#what-new .list-area {
+    float: right;
+    position: relative;
+    bottom: 250px;
+}
+
+#what-new .list-area .list {
+    background: url(../img/what-new/list.png) no-repeat;
+    width: 613px;
+    height: 614px;
+}
+
+#what-new .list-area .note-1 {
+    bottom: 290px;
+    right: 380px;
+}
+
+#what-new .list-area .note-2 {
+    bottom: 160px;
+    right: 280px;
+}
+
+#what-new .list-area .note-3 {
+    bottom: 150px;
+    left: 200px;
+}
+
+#what-new .list-area .note {
+    width: 375px;
+    position: relative;
+}
+
+#what-new .list-area .note .note-cont {
+    width: 300px;
+    float: left;
+    text-align: right;
+}
+
+#what-new .list-area .note .note-cont, .note-ico {
+    display: inline-block;
+}
+
+#what-new .list-area .note h2 {
+    font-size: 18px;
+    line-height: 5px;
+}
+
+#what-new .list-area .note .descr {
+    font-size: 14px;
+    color: #606060;
+}
+
+#what-new .list-area .note .red {
+    color: #e42b36;
+    font-weight: bold;
+}
+
+#what-new .list-area .note .note-ico {
+    margin-left: 10px
+}
+
+#what-new .list-area .note-3 .note-cont {
+    float: right;
+    text-align: left;
+}
+
+#what-new .list-area .note-1 .clock-ico {
+    background: url(../img/what-new/clock-ico.png) no-repeat;
+    width: 39px;
+    height: 49px;
+}
+
+#what-new .list-area .note-2 .shop-ico {
+    background: url(../img/what-new/shop-ico.png) no-repeat;
+    width: 61px;
+    height: 61px;
+    position: relative;
+    top: 40px;
+}
+
+#what-new .list-area .note-3 .idea-ico {
+    background: url(../img/what-new/idea-ico.png) no-repeat;
+    width: 46px;
+    height: 58px;
+    float: left;
+}
+
+/* Features */
+
+#features {
+    color: #606060;
+    font-size: 18px;
+    height: 290px;
+}
+
+#features .container {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 110px;
+    bottom: 250px;
+}
+
+#features .facts, .facts-descr {
+    display: inline-block;
+}
+
+#features .facts {
+    width: 385px;
+}
+
+#features .facts .fact .num-ico, .fact-text {
+    display: inline-block;
+}
+
+#features .facts .fact .fact-text {
+    width: 300px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 30px;
+}
+
+#features .facts .fact .third {
+    border: 0;
+}
+
+#features .facts .fact .num-ico {
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+
+#features .facts .fact .first-ico {
+    background: url(../img/features/1.png) no-repeat;
+    width: 74px;
+    height: 74px;
+}
+
+#features .facts .fact .sec-ico {
+    background: url(../img/features/2.png) no-repeat;
+    width: 74px;
+    height: 74px;
+}
+
+#features .facts .fact .third-ico {
+    background: url(../img/features/3.png) no-repeat;
+    width: 74px;
+    height: 74px;
+}
+
+#features .facts .fact .forth-ico {
+    background: url(../img/features/4.png) no-repeat;
+    width: 74px;
+    height: 74px;
+}
+
+#features .facts-descr {
+    position: relative;
+    width: 400px;
+    margin-left: 83px;
+    bottom: 50px;
+}
+
+#features .facts-descr h1 {
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#features .facts-descr .imp-fact {
+    background: url(../img/features/slogan-bg.png) no-repeat;
+    width: 469px;
+    height: 85px;
+}
+
+#features .facts-descr .imp-fact span {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    top: 15px;
+    line-height: 5px;
+    font-style: italic;
+}
+
+#features .facts-descr .imp-fact .first-text {
+    margin-left: 40px;
+}
+
+#features .facts-descr .imp-fact .sec-text {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+/* Help block */
+
+#help {
+    background: #f6efe6;
+    width: 100%;
+    color: #606060;
+}
+
+#help .container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#help h1 {
+    color: #000;
+    font-size: 48px;
+    text-align: center;
+    line-height: 0;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #d8d2cb;
+    font-weight: 400;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#help .help-blocks {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#help .help-blocks .block {
+    display: inline-block;
+    width: 270px;
+}
+
+#help .help-blocks .block h2 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#help .help-blocks .block-right {
+    margin-left: 70px;
+}
+
+#help .help-blocks .block .help-ico {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#help .help-blocks .block .shelf-ico {
+    background: url(../img/help/shelf.png) no-repeat;
+    width: 234px;
+    height: 150px;
+    margin-top: 100px;
+}
+
+#help .help-blocks .block .biling-ico {
+    background: url(../img/help/biling.png) no-repeat;
+    width: 272px;
+    height: 225px;
+}
+
+#help .help-blocks .block .packet-ico {
+    background: url(../img/help/packet.png) no-repeat;
+    width: 179px;
+    height: 200px;
+    margin-top: 80px;
+}
+
+/* Start */
+
+#start {
+    background: url(../img/start/bg.png) repeat-x;
+    color: #a9a9a9;
+    text-align: center;
+    height: 300px;
+}
+
+#start .container {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#start a {
+    color: #f5f5f5;
+}
+
+#start a:hover {
+    color: #f59331;
+    text-decoration: none;
+}
+
+#start .start-button {
+    border: 0;
+    color: white;
+    font-size: 30px;
+    padding: 15px 60px;
+    margin: 0;
+    background-color: #fbc239;
+    border: 1px solid #fbc239;
+    -webkit-box-shadow: 0px 5px 0px 0px #c7900e;
+    box-shadow: 0px 5px 0px 0px #c7900e;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline-style: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+}
+
+#start .start-button {
+    text-align: center;
+    height: 70px;
+}
+
+#start .start-button:hover {
+    background-color: #f59331;
+    border: 1px solid #f59331;
+    -webkit-box-shadow: 0px 5px 0px 0px #d87716;
+    box-shadow: 0px 5px 0px 0px #d87716;
+    outline-style: none;
+    position:relative;
+    z-index: 0;
+    color: #fff;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#start .start-button::-moz-focus-inner {
+    border: 0;
+}
+
+#start .start-button:active:not([disabled]) {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: -3px;
+    border: 1px solid #f59331;
+    background-color: #f59331;
+    -webkit-box-shadow: 0px 2px 0px 0px #d87716;
+    box-shadow: 0px 2px 0px 0px #d87716;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+    outline-style: none;
+    position:relative;
+    z-index: 0;
+}
+
+#start .start-button:active:not([disabled]) {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: -3px;
+    border: 1px solid #f59331;
+    background-color: #f59331;
+    -webkit-box-shadow: 0px 2px 0px 0px #d87716;
+    box-shadow: 0px 2px 0px 0px #d87716;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+    outline-style: none;
+    position:relative;
+    z-index: 0;
+}
+
+#start .start-button[disabled]:active {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-top: 0;
+    color: #f2ece0;
+    border: 1px solid #e4d8be;
+    background-color: #e4d8be;
+    -webkit-box-shadow: 0px 5px 0px 0px #dbccad;
+    box-shadow: 0px 5px 0px 0px #dbccad;
+    cursor: default;
+    position:relative;
+    z-index: 0;
+}
+
+#start .start-text {
+    background: url(../img/start/start-text.png) no-repeat;
+    width: 258px;
+    height: 86px;
+    position: relative;
+    left: 100px;
+}
+
+/* Footer */
+
+footer .container {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+footer .copy-address, .social-share, .creator {
+    display: inline-block;
+}
+
+footer .copy-address p {
+    font-size: 11px;
+}
+
+footer .social-share {
+    width: 300px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+footer .social-share .vk-share, .ok-share {
+    display: inline-block;
+}
+
+footer .social-share .ok-share {
+    margin-left: 25px;
+}
+
+footer .creator {
+    position: relative;
+    margin-left: 500px;
+    bottom: 30px;
+}

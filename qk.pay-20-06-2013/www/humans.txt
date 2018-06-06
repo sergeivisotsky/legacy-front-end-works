@@ -1,0 +1,12 @@
+﻿/* FORN-END DEVELOPER */
+	Developer: Sergei Visotsky
+	Site: www.sergeivisotsky.com
+	Twitter: @SergeiVisotsky
+	From: Riga, Latvia
+	Tech: HTML5, CSS3, JavaScript, jQuery
+	IDE: Sublime Text 2
+
+/* Hardcrafted by */
+	Hardcrafter: Simberev Dmitriy's studio â€“ Simberline
+    	Site: www.simberline.ru
+    	Tel: +373 (778) 655-25
