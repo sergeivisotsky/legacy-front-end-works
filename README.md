@@ -1,2 +1,2 @@
-# old-front-end-works
-Old website Front-end development works
+# legacy-front-end-works
+Legacy website Front-end development works
