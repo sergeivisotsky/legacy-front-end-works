@@ -1,0 +1,297 @@
+/*
+	Author: Sergei Visotsky
+	Author URI: http://svisotsky.microlines.lv/
+*/
+
+@import url(reset.css);
+
+/* Main Styles */
+
+body {
+	background: url(../img/bg.jpg);
+	color: #000;
+	font: normal 15px arial, verdana, tahoma, sans-serif;
+	padding-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #0a4f9d;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.grey {
+	color: #919191;
+}
+
+.orange {
+	color: #e99923;
+}
+
+/* Header */
+
+header {
+	background: url(../img/header-bg.jpg) repeat-x;
+	position: relative;
+	z-index: 2;
+	height: 83px;
+	text-align: left;
+}
+
+header .contacts {
+	float: right;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+header .contacts .telephone {
+	float: left;
+}
+
+header .contacts .adress {
+	float: left;
+	margin-left: 28px;
+}
+
+header .contacts img {
+	float: left;
+}
+
+header .contacts .contact-info {
+	float: left;
+	margin-left: 7px;
+	color: #adadad;
+}
+
+header .contacts .contact-info p {
+	color: #f6bb66;
+}
+
+header .sharps {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	background: url(../img/sharps.png) no-repeat;
+	width: 1191px;
+	height: 80px;
+}
+
+header .wrapper {
+	position: relative;
+	padding-top: 5px;
+}
+
+/* Navigation */
+
+nav {
+	background: url(../img/menu-bg.jpg);
+	width: 100%;
+	height: 49px;
+	-webkit-box-shadow: rgba(0, 0, 0, .4) 0 0 1px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, .4) 0 0 1px 1px;
+    box-shadow: rgba(0, 0, 0, .4) 0 0 1px 1px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left; 
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav ul li a {
+	display: table;
+	line-height: 49px;
+	padding: 0 30px;
+	color: #4f4f4f;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #e7e7e7;
+}
+
+nav ul li a:hover {
+	background: url(../img/nav-active.png) left top repeat-x;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #8c8c8c;
+}
+
+nav ul .active {
+	background: url(../img/nav-active.png) left top repeat-x;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #8c8c8c;
+}
+
+nav #search input {
+	background: url(../img/search.png) no-repeat right;
+	background-color: #fff;
+	position: relative;
+	left: 0;
+	top: 0;
+	border: 0;
+	float: right;
+	color: #909090;
+	font-size: 13px;
+	margin-top: 10px;
+	padding-left: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 240px;
+	height: 27px;
+}
+
+/* Slider */
+
+.slider {
+	width: 956px;
+	height: 315px;
+	text-align: left;
+}
+
+.slider .slide-tools {
+	position: relative;
+	display: block;
+	background: rgba(000, 000, 000, 0.23);
+	bottom: 132px;
+	height: 130px;
+}
+
+.slider .slide-tools .slide-tools-cont {
+	color: #e1e1e1;
+	width: 815px;
+	padding-left: 120px;
+}
+
+.slider .slide-tools .slide-tools-cont h1 {
+	color: #ffc165;
+	font-size: 30px;
+}
+
+.slider .slide-tools .arrow-left {
+	position: relative;
+	top: 50px;
+	left: 20px;
+}
+
+.slider .slide-tools .arrow-right {
+	position: relative;
+	top: -60px;
+	left: 910px;
+}
+
+.slider .slide-tools .next-s-nav {
+	background: #e1e1e1;
+	width: 112px;
+	height: 27px;
+	border-radius: 3px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: 400px;
+	margin-top: 107px;
+	text-align: center;
+}
+
+/* Content */
+
+.content {
+	background: #fff;
+	background: -moz-linear-gradient(top, #d2d2d2 0%, #fff);
+    background: -webkit-linear-gradient(top, #d2d2d2 0%,#fff);
+    background: -o-linear-gradient(top, #d2d2d2 0%,#fff);
+    background: -ms-linear-gradient(top, #d2d2d2 0%,#fff);
+    background: linear-gradient(top, #d2d2d2 0%,#fff);
+	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+}
+
+.content .about-company {
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+.content .about-auto {
+	padding: 15px 15px 15px 15px;
+	width: 600px;
+	float: left;
+	line-height: 20px;
+}
+
+.content .about-auto h1 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.content .about-auto img {
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.content .where-we {
+	background: url(../img/where-bg.png) no-repeat;
+	width: 315px;
+	height: 366px;
+	text-align: center;
+	float: left;
+}
+
+.content .where-we h1 {
+	font-size: 22px;
+	margin-top: 15px;
+	margin-right: 40px;
+}
+
+.content .where-we .where-we-cont {
+	padding-top: 5px;
+} 
+
+.content .banner {
+	padding-top: 5px;
+	padding-left: 3px;
+	text-align: center;
+}
+
+/* Footer */
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer .copy {
+	float: left;
+}
+
+footer .ft-nav {
+	float: right;
+}
+
+/* Global Styles */
+
+.clear:before, .clear:after {
+	content: '';
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	*zoom: 1;
+}
+

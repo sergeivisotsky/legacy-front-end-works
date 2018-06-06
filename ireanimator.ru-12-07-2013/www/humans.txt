@@ -1,0 +1,19 @@
+/* FORN-END DEVELOPER */
+	Developer: Sergei Visotsky
+	Site: www.sergeivisotsky.com
+	Twitter: @SergeiVisotsky
+	From: Riga, Latvia
+	Tech: HTML5, CSS3, JavaScript, jQuery
+	IDE: Sublime Text 2
+
+/* BACK-END DEVELOPER */
+	Developer:
+	Site:
+	Twitter:
+	From:
+	Tech:
+	IDE:
+
+/* Hardcrafted by */
+	Name: Tatjana Drugak
+	skype: tan4ikweb

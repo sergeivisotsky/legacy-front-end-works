@@ -1,0 +1,10 @@
+/* FORN-END DEVELOPER */
+	Developer: Sergei Visotsky
+	Site: www.sergeivisotsky.com
+	Twitter: @SergeiVisotsky
+	From: Riga, Latvia
+	Tech: HTML5, CSS3, JavaScript, jQuery
+	IDE: Sublime Text 2
+
+/* Hardcrafted by */
+	Site: www.bf-group.ru
