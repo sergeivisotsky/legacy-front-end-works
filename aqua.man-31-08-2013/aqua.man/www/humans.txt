@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* FORN-END DEVELOPER */
 	Developer: Sergei Visotsky
 	Site: www.sergeivisotsky.com
@@ -7,4 +8,15 @@
 	IDE: Sublime Text 2
 
 /* Hardcrafted by */
+=======
+/* FORN-END DEVELOPER */
+	Developer: Sergei Visotsky
+	Site: www.sergeivisotsky.com
+	Twitter: @SergeiVisotsky
+	From: Riga, Latvia
+	Tech: HTML5, CSS3, JavaScript, jQuery
+	IDE: Sublime Text 2
+
+/* Hardcrafted by */
+>>>>>>> 73c9c6c0e7b01910b71996e2c831a97ab0354f3d
 	Site: www.bf-group.ru

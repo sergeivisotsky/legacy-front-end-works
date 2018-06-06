@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* FORN-END DEVELOPER */
 	Developer: Sergei Visotsky
 	Site: www.sergeivisotsky.com
@@ -16,4 +17,24 @@
 
 /* Hardcrafted by */
 	Name: Tatjana Drugak
+=======
+/* FORN-END DEVELOPER */
+	Developer: Sergei Visotsky
+	Site: www.sergeivisotsky.com
+	Twitter: @SergeiVisotsky
+	From: Riga, Latvia
+	Tech: HTML5, CSS3, JavaScript, jQuery
+	IDE: Sublime Text 2
+
+/* BACK-END DEVELOPER */
+	Developer:
+	Site:
+	Twitter:
+	From:
+	Tech:
+	IDE:
+
+/* Hardcrafted by */
+	Name: Tatjana Drugak
+>>>>>>> 73c9c6c0e7b01910b71996e2c831a97ab0354f3d
 	skype: tan4ikweb

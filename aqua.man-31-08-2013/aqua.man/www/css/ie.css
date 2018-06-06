@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .order-area .order-form input[type="text"] {
     width: 305px;
     height: 30px;
@@ -6,4 +7,14 @@
     padding-left: 15px;
     color: #6d6e76;
     text-transform: uppercase;
+=======
+.order-area .order-form input[type="text"] {
+    width: 305px;
+    height: 30px;
+    border: 0;
+    padding-top: 19px;
+    padding-left: 15px;
+    color: #6d6e76;
+    text-transform: uppercase;
+>>>>>>> 73c9c6c0e7b01910b71996e2c831a97ab0354f3d
 }
